@@ -76,7 +76,7 @@ function Tab() {
         <button  className="btn btn-primary addButton" onClick={()=>addFun()}><b>ADD</b></button>
       </div>
 
-      <div className="tabelCom">
+      <div className="tabelCom text-sm-wrap">
         <table className="table table-hover">
             <thead>
               <tr>
@@ -94,12 +94,12 @@ function Tab() {
                 return(
                   <tbody key={index}>
                     <tr >
-                      <th onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
-                      <td onClick={()=>editFun(e,index)}>{e.name}</td>
-                      <td onClick={()=>editFun(e,index)}>{e.surname}</td>
-                      <td onClick={()=>editFun(e,index)}>{e.age}</td>
-                      <td onClick={()=>editFun(e,index)}>{e.job}</td>
-                      <td><button onClick={()=>deleteFun(index)} className="btn btn-danger"><b>Delete</b></button></td>
+                      <th className="renderTabelNum text-break fs-6" onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
+                      <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.name}</td>
+                      <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.surname}</td>
+                      <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.age}</td>
+                      <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.job}</td>
+                      <td className="renderTabel"><button onClick={()=>deleteFun(index)} className="btn btn-danger"><b>Delete</b></button></td>
                     </tr>
                   </tbody>
                 )
