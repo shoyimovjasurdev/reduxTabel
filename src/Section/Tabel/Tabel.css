@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topText{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 2rem;
+}
+
+.inputCom {
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 2rem 1rem;
+  border-radius: 5px;
+}
+
+.tabelInputs {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+
+.tabelInputs .inputs {
+  max-width: 90%;
+  margin: 0 1rem 1rem 1rem;
+  padding: .5rem .5rem;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputCom button {
+  width: 100%;
+}
+
+.tabelCom {
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 4rem
+}
+
+@media only screen and (max-width: 992px) {
+  .tabelInputs {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tabelInputs {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
