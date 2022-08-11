@@ -94,7 +94,7 @@ function Tab() {
                 return(
                   <tbody key={index}>
                     <tr >
-                      <th className="renderTabelNum text-break" onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
+                      <th className="renderTabel text-break" onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.name}</td>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.surname}</td>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.age}</td>
