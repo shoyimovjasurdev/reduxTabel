@@ -60,23 +60,23 @@ function Tab() {
 
       <div className="inputCom">
         <div className="tabelInputs">
-          <input className="inputs form-control" placeholder="name"  value={value1} type="text" onChange={(e)=>{
+          <input maxLength={12} className="inputs form-control" placeholder="name"  value={value1} type="text" onChange={(e)=>{
             setValue1(e.target.value)
           }} />
-          <input className="inputs form-control" placeholder="surname" value={value2} type="text" onChange={(e)=>{
+          <input maxLength={12} className="inputs form-control" placeholder="surname" value={value2} type="text" onChange={(e)=>{
             setValue2(e.target.value)
           }}/>
-          <input className="inputs form-control" placeholder="age" value={value3} type="number" onChange={(e)=>{
+          <input maxLength={8} className="inputs form-control" placeholder="age" value={value3} type="number" onChange={(e)=>{
             setValue3(e.target.value)
           }}/>
-          <input className="inputs form-control" placeholder="job" value={value4} type="text" onChange={(e)=>{
+          <input maxLength={15} className="inputs form-control" placeholder="job" value={value4} type="text" onChange={(e)=>{
             setValue4(e.target.value)
           }}/>
         </div>
         <button  className="btn btn-primary addButton" onClick={()=>addFun()}><b>ADD</b></button>
       </div>
 
-      <div className="tabelCom text-sm-wrap">
+      <div className="tabelCom">
         <table className="table table-hover">
             <thead>
               <tr>
@@ -94,7 +94,7 @@ function Tab() {
                 return(
                   <tbody key={index}>
                     <tr >
-                      <th className="renderTabelNum text-break fs-6" onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
+                      <th className="renderTabelNum text-break" onClick={()=>editFun(e,index)} scope="row">{index+1}</th>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.name}</td>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.surname}</td>
                       <td className="renderTabel text-break" onClick={()=>editFun(e,index)}>{e.age}</td>

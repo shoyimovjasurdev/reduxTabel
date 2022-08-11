@@ -39,20 +39,13 @@
   background-color: rgba(0, 0, 0, .2);
   padding: 1rem 1rem;
   border-radius: 5px;
-  margin-bottom: 2rem
+  margin-bottom: 4rem
 }
 
 .tabelCol{
   max-width: 80%;
-  overflow-x: scroll;
-}
-.renderTabel{
-  width: 19%;
 }
 
-.renderTabelNum{
-  width: 5%;
-}
 
 @media only screen and (max-width: 992px) {
   .tabelInputs {
@@ -66,15 +59,4 @@
     display: grid;
     grid-template-columns: auto;
   }
-}
-
-@media only screen and (max-width: 544px) {
- .tabelCom{
-  width: 100%;
- }
- .renderTabel{
-  overflow-x: scroll;
-  font-size: .8rem;
- }
-
 }
